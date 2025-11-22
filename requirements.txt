@@ -1,0 +1,9 @@
+langchain-google-genai
+langchain-core
+langgraph
+streamlit
+python-dotenv
+pypdf
+pillow
+kagglehub
+pydantic
