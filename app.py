@@ -12,6 +12,11 @@ from src.assets import ICONS, CSS_STYLES
 from src.utils import ensure_directories_exist
 from dotenv import load_dotenv
 
+key = os.environ.get("GOOGLE_API_KEY", "Not Found")
+st.write(f"🔑 **DEBUG INFO:** Key length: {len(key)}")
+st.write(f"🔑 **DEBUG INFO:** First 4 chars: '{key[:4]}'")
+st.write(f"🔑 **DEBUG INFO:** Last 4 chars: '{key[-4:]}'")
+
 
 
 #  Configuration
