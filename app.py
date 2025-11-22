@@ -7,6 +7,9 @@ from src.assets import ICONS, CSS_STYLES
 from src.utils import ensure_directories_exist
 from dotenv import load_dotenv
 
+if "GOOGLE_API_KEY" in st.secrets:
+    os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
+
 #  Configuration
 load_dotenv()
 ensure_directories_exist()
